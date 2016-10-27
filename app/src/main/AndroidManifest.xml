@@ -15,6 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.OpcoesListarSinesActivity" />
+        <activity android:name=".activities.ListarSinesBRActivity" />
+        <activity android:name=".activities.ListarSineComRaioActivity" />
+        <activity android:name=".activities.BuscarSinePorCodActivity"></activity>
     </application>
 
 </manifest>

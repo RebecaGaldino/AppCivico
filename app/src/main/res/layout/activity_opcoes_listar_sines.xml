@@ -6,15 +6,14 @@
 
 
     <Button
-        android:text="Listar Sines"
+        android:text="Listar todos os Sines (BR)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnListarSines" />
+        android:id="@+id/btnListarSinesBR" />
 
     <Button
-        android:text="Buscar Sine por código"
+        android:text="Listar Sines CG em Raio de 100km"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnBuscarSinePorCod" />
-
+        android:id="@+id/btnListarSineRaio" />
 </LinearLayout>
