@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import br.edu.ifpb.appcivico.activities.BuscarSinePorCodActivity;
+import br.edu.ifpb.appcivico.activities.ListarSineComRaioActivity;
 import br.edu.ifpb.appcivico.activities.MainActivity;
 
 /**
