@@ -47,7 +47,7 @@ public class ListarSineComRaioActivity extends AppCompatActivity {
                 @Override
                 public void run() {
 
-                    Call<List<Sine>> call = ServerConnection.getInstance().getService().listarWithRaio();
+                    Call<List<Sine>> call = ServerConnection.getInstance().getService().listarComRaio();
 
                     Log.i(this.getClass().getName(), "realizando chamada ao serviço de listagem");
 
