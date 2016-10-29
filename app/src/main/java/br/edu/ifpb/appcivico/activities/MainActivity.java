@@ -14,9 +14,12 @@ import br.edu.ifpb.appcivico.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.btnListarSinesCG) Button btnListarSinesCG;
-    @BindView(R.id.btnListarSinesBR) Button btnListarSinesBR;
-    @BindView(R.id.btnBuscarSinePorCod) Button btnBuscarSinePorCod;
+    @BindView(R.id.btnListarSinesCG)
+    Button btnListarSinesCG;
+    @BindView(R.id.btnListarSinesBR)
+    Button btnListarSinesBR;
+    @BindView(R.id.btnBuscarSinePorCod)
+    Button btnBuscarSinePorCod;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,4 +33,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }
