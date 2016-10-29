@@ -13,5 +13,10 @@ import retrofit2.http.GET;
 public interface APIService {
 
     @GET("latitude/-7.242662/longitude/-35.9716057/raio/50")
-    Call<List<Sine>> listarComRaio();
+    Call<List<Sine>> getSinesComRaio();
+
+    @GET(" ")
+    Call<List<Sine>> getSinesBR();
+
+
 }

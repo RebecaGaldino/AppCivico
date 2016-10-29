@@ -18,9 +18,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class ListarSineComRaioActivity extends AppCompatActivity {
+public class ListarSinesComRaioActivity extends AppCompatActivity {
 
-        @BindView(R.id.lvSines) ListView lvSines;
+        @BindView(R.id.lvSinesComRaio) ListView lvSines;
         ArrayAdapter<Sine> adapter;
         List<Sine> sines;
 
@@ -37,19 +37,19 @@ public class ListarSineComRaioActivity extends AppCompatActivity {
             adapter = new ArrayAdapter<Sine>(this, android.R.layout.simple_list_item_1, sines);
             lvSines.setAdapter(adapter);
 
-            listar();
+            listarSinesComRaio();
         }
 
 
-        public void listar(){
+        public void listarSinesComRaio(){
 
             new Thread(new Runnable() {
                 @Override
                 public void run() {
 
-                    Call<List<Sine>> call = ServerConnection.getInstance().getService().listarComRaio();
+                    Call<List<Sine>> call = ServerConnection.getInstance().getService().getSinesComRaio();
 
-                    Log.i(this.getClass().getName(), "realizando chamada ao serviço de listagem");
+                    Log.i(this.getClass().getName(), "Calling list");
 
                     call.enqueue(new Callback<List<Sine>>() {
                         @Override
@@ -64,19 +64,19 @@ public class ListarSineComRaioActivity extends AppCompatActivity {
                                     adapter.notifyDataSetChanged();
                                 }
                                 else{
-                                    Log.e(this.getClass().toString(), "Erro na chamada");
+                                    Log.e(this.getClass().toString(), "Error on calling");
                                 }
 
 
                             }
                             catch (Exception e){
-                                Log.e(this.getClass().toString(), "Erro na chamada");
+                                Log.e(this.getClass().toString(), "Error on calling");
                             }
                         }
 
                         @Override
                         public void onFailure(Call<List<Sine>> call, Throwable t) {
-                            Log.e("onFailure", "Erro");
+                            Log.e("onFailure", "Error");
                         }
                     });
                 }
