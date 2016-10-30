@@ -64,7 +64,7 @@ public class BuscarSinePorCodActivity extends AppCompatActivity implements View.
                                 tvSine.setText(sine.toString());
 
                             } else {
-                                Log.e(this.getClass().toString(), "Error on calling " + response.code() + cod);
+                                Log.e(this.getClass().toString(), "Error on calling " + response.code() + " Cód: " + cod);
                             }
                         } catch (Exception e) {
                             Log.e(this.getClass().toString(), e.getMessage().toString());
