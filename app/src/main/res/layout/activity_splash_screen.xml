@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="224dp"
+        android:id="@+id/sineIcon"
+        android:src="@mipmap/lupa"
+        android:layout_margin="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="top|center" />
+
+    <!-- " -->
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="TCU Cívico"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:textStyle="bold"
+        tools:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Busca de sines"
+        android:textColor="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        tools:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+    </ProgressBar>
+</LinearLayout>
