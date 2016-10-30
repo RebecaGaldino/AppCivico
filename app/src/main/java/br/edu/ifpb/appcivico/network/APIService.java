@@ -20,6 +20,6 @@ public interface APIService {
     @GET(" ")
     Call<List<Sine>> getSinesBR();
 
-    @POST("cod/{cod}")
+    @GET("cod/{cod}")
     Call<List<Sine>> getSinePorCod(@Path("cod") String cod);
 }
