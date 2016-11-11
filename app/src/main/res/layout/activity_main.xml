@@ -23,4 +23,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnBuscarSinePorCod" />
 
+    <Button
+        android:text="Ver Sines CG no mapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMap" />
+
 </LinearLayout>

@@ -7,6 +7,7 @@ import android.widget.Button;
 import br.edu.ifpb.appcivico.listeners.OnClickBuscarSinePorCod;
 import br.edu.ifpb.appcivico.listeners.OnClickListarSinesBR;
 import br.edu.ifpb.appcivico.listeners.OnClickListarSinesComRaio;
+import br.edu.ifpb.appcivico.listeners.OnClickMapaSinesComRaio;
 import butterknife.*;
 
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnListarSinesBR;
     @BindView(R.id.btnBuscarSinePorCod)
     Button btnBuscarSinePorCod;
+    @BindView(R.id.btnMap) Button btnMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnListarSinesCG.setOnClickListener(new OnClickListarSinesComRaio(this));
         btnListarSinesBR.setOnClickListener(new OnClickListarSinesBR(this));
         btnBuscarSinePorCod.setOnClickListener(new OnClickBuscarSinePorCod(this));
-
+        btnMap.setOnClickListener(new OnClickMapaSinesComRaio(this));
 
     }
 

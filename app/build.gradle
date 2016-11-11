@@ -22,11 +22,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0-beta1'
+    compile 'com.google.android.gms:play-services:9.0.2'
 
     compile 'com.jakewharton:butterknife:8.2.1'//Butter Knife
     apt 'com.jakewharton:butterknife-compiler:8.2.1'//Butter Knife
@@ -39,4 +37,6 @@ dependencies {
 
     compile 'com.google.code.gson:gson:2.7'  //Gson
 
+
 }
+

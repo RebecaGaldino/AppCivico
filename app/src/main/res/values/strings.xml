@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppCivico</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
