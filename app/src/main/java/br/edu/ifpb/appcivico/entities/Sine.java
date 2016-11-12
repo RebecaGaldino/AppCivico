@@ -1,5 +1,7 @@
 package br.edu.ifpb.appcivico.entities;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by rebeca on 27/10/2016.
  */
@@ -16,6 +18,8 @@ public class Sine {
     private String municipio;
     private String uf;
     private String lat;
+
+    @SerializedName("long")
     private String longitude;
 
     public String getCodPosto() {
