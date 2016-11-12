@@ -90,14 +90,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         });
 
-
-
-        //Opções de zoom
+        //Controles do zoom
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setCompassEnabled(true);
 
 
-        //Listener da ação realizada ao clicar em um ponto do mapa
+        //Listener da ação realizada ao clicar em um ponto do mapa - TODO - ampliar sine clicado
         //mMap.setOnMapClickListener(new OnMapClickListener(this));
 
     }
