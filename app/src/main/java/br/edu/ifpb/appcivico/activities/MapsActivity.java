@@ -46,7 +46,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-      /*  mMap = googleMap;
+       /* mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-34, 151);
@@ -57,7 +57,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         Call<List<Sine>> call = ServerConnection.getInstance().getService().getSinesComRaio();
 
-        Log.i(this.getClass().getName(), "Calling Sine");
+        Log.i(this.getClass().getName(), "Calling Sines");
 
         call.enqueue(new Callback<List<Sine>>() {
             @Override
@@ -91,8 +91,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         });
 
 
-        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-
 
         //Opções de zoom
         mMap.getUiSettings().setZoomControlsEnabled(true);
@@ -103,5 +101,4 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //mMap.setOnMapClickListener(new OnMapClickListener(this));
 
     }
-
 }
