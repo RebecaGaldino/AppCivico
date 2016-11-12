@@ -12,14 +12,14 @@ public class ServerConnection {
             "http://mobile-aceite.tcu.gov.br/mapa-da-saude/rest/emprego/";
 
 
-    private static APIService service;
-    private static ServerConnection ourInstance = new ServerConnection();
+    private static APIServices service;
+    private static ServerConnection selfInstance = new ServerConnection();
 
     public static ServerConnection getInstance() {
-        return ourInstance;
+        return selfInstance;
     }
 
-    public APIService getService() {
+    public APIServices getService() {
         return service;
     }
 
@@ -35,6 +35,6 @@ public class ServerConnection {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        service = retrofit.create(APIService.class);
+        service = retrofit.create(APIServices.class);
     }
 }
