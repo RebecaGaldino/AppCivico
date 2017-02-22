@@ -29,4 +29,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnMap" />
 
+    <Button
+        android:text="Ver Sines por localização GPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMapGPS" />
+
 </LinearLayout>

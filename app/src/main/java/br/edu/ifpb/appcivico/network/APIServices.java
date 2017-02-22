@@ -21,4 +21,11 @@ public interface APIServices {
 
     @GET("cod/{cod}")
     Call<List<Sine>> getSinePorCod(@Path("cod") String cod);
+
+    @GET("emprego/latitude/{lat}/longitude/{long}/raio/{raio}")
+    Call<List<Sine>> getSinesGPS(
+            @Path("lat") Double lat,
+            @Path("long") Double longitude,
+            @Path("raio") String raio
+    );
 }

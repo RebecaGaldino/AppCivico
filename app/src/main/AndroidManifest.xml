@@ -43,7 +43,10 @@
 
         <activity
             android:name=".activities.MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".activities.SinesGPSMapsActivity"
+            android:label="@string/title_activity_sines_gpsmaps"></activity>
     </application>
 
 </manifest>
