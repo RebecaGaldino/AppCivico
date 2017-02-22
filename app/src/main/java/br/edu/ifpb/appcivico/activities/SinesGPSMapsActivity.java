@@ -25,6 +25,7 @@ import retrofit2.Response;
 public class SinesGPSMapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+
     private List<Sine> sines;
     double latitude;
     double longitude;
